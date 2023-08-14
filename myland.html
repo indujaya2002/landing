@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <link rel="stylesheet" href="lan.css">
+    </head>
+    <body>
+        <section class="sec">
+            <header>
+                <a href="#"><img src="logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">New items</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>I Like...</h2>
+                    <p>Nothing says "summer" like a cool drink on a scorching day. <br>
+                        Whether you're looking for the perfect iced tea, a kicked-up lemonade, <br>
+                        or a fabulous tropical cocktail, a sip or two from this collection of <br>
+                        summer drinks will help cool you off when the weather gets hot. </p>
+                    <a href="#">All Products</a>
+                </div>
+                <div class="imgBox">
+                    <img src="pepsi002.png" class="pep1">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png');changeBgColor('#0062be')"></li>
+                <li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png');changeBgColor('#e60c2c')"></li>
+                <li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png');changeBgColor('#1e1e1e')"></li>
+            </ul>
+            <ul class="sci">
+                <li><img src="f.png" width="30px" height="30px"></li>
+                <li><img src="i.png" width="30px" height="30px"></li>
+                <li><img src="t.png" width="30px" height="30px"></li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+            function imgSlider(anything) {
+                document.querySelector('.pep1').src = anything;
+            }
+            function changeBgColor(color) {
+                const sec = document.querySelector('.sec');
+                sec.style.background = color;
+            }
+        </script>
+    </body>
+</html>
